@@ -45,40 +45,45 @@
 		<!--
 			###########################################################################################
 			#
-			#  O P E N B O X
+			#  H A R D W A R E
 			#
 			###########################################################################################
 			Required Software:
 				apt-get install \
-					openbox obmenu obconf
-				(Manually install obkey)
+					blueman bluemon bluewho bluez libbluetooth3 bluez-tools btscanner bluez-firmware gnome-bluetooth \
+					system-config-printer \
+					arandr
+
 		-->
-		<menu icon=".config/openbox/icons/menu/openbox.png" id="sub-menu-openbox" label="Openbox">
-			<item icon=".config/openbox/icons/menu/openbox/obmenu.png" label="Openbox Menu Editor">
+		<!-- end of Hardware -->
+		<menu icon=".config/openbox/icons/menu/settings.png" id="sub-menu-hardware" label="Hardware">
+			<item icon=".config/openbox/icons/menu/settings/bluetooth-wizard.png" label="Bluetooth Wizard">
 				<action name="Execute">
-					<execute>obmenu</execute>
+					<execute>bluetooth-wizard</execute>
 				</action>
 			</item>
-			<item icon=".config/openbox/icons/menu/openbox/obconf.png" label="Openbox Configuration Manager">
+			<item icon=".config/openbox/icons/menu/settings/arandr.png" label="XRandR Gui (Monitor)">
 				<action name="Execute">
-					<execute>obconf</execute>
+					<execute>arandr</execute>
 				</action>
 			</item>
-			<item icon=".config/openbox/icons/menu/openbox/obkey.png" label="Openbox Hotkey Configuration">
+			<item icon=".config/openbox/icons/menu/settings/arandr.png" label="Printer">
 				<action name="Execute">
-					<execute>obkey</execute>
+					<execute>system-config-printer</execute>
 				</action>
 			</item>
-			<item icon=".config/openbox/icons/menu/openbox/reconfigure.png" label="Reconfigure">
-				<action name="Reconfigure"/>
+			<item icon=".config/openbox/icons/menu/multimedia/audio-mixer.png" label="Audio Mixer">
+				<action name="Execute">
+					<execute>xfce4-mixer</execute>
+				</action>
 			</item>
-			<item icon=".config/openbox/icons/menu/openbox/restart.png" label="Restart">
-				<action name="Restart"/>
+			<item icon=".config/openbox/icons/menu/multimedia/volume-control.png" label="PulseAudio Volume Control">
+				<action name="Execute">
+					<execute>pavucontrol</execute>
+				</action>
 			</item>
-			<!-- Openbox Virtual Desktop Management -->
-			<menu icon=".config/openbox/icons/menu/openbox/desktop.png" id="client-list-menu"/>
 		</menu>
-		<!-- end of Submenu: Openbox -->
+
 		<!--
 			###########################################################################################
 			#
@@ -96,24 +101,29 @@
 
 		-->
 		<menu icon=".config/openbox/icons/menu/settings.png" id="sub-menu-settings" label="Settings">
+			<item icon=".config/openbox/icons/menu/openbox/obmenu.png" label="Openbox Menu Editor">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<item icon=".config/openbox/icons/menu/openbox/obconf.png" label="Openbox Configuration Manager">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item icon=".config/openbox/icons/menu/openbox/obkey.png" label="Openbox Hotkey Configuration">
+				<action name="Execute">
+					<execute>obkey</execute>
+				</action>
+			</item>
 			<item icon=".config/openbox/icons/menu/settings/dconf-editor.png" label="dconf-editor">
 				<action name="Execute">
 					<execute>dconf-editor</execute>
 				</action>
 			</item>
-			<item icon=".config/openbox/icons/menu/settings/bluetooth-wizard.png" label="Bluetooth Wizard">
-				<action name="Execute">
-					<execute>bluetooth-wizard</execute>
-				</action>
-			</item>
 			<item icon=".config/openbox/icons/menu/settings/lxappearance.png" label="LXAppearance">
 				<action name="Execute">
 					<execute>lxappearance</execute>
-				</action>
-			</item>
-			<item icon=".config/openbox/icons/menu/settings/gtk-theme-switch.png" label="GTK Theme Switch">
-				<action name="Execute">
-					<execute>gtk-theme-switch2</execute>
 				</action>
 			</item>
 			<item icon=".config/openbox/icons/menu/settings/ibus-setup.png" label="ibus Setup">
@@ -149,11 +159,6 @@
 			<item icon=".config/openbox/icons/menu/settings/wine-uninstall.png" label="Wine Uninstaller">
 				<action name="Execute">
 					<execute>wine uninstaller</execute>
-				</action>
-			</item>
-			<item icon=".config/openbox/icons/menu/settings/arandr.png" label="XRandR Gui (Monitor)">
-				<action name="Execute">
-					<execute>arandr</execute>
 				</action>
 			</item>
 		</menu>
@@ -640,11 +645,6 @@
 					<execute>audacity</execute>
 				</action>
 			</item>
-			<item icon=".config/openbox/icons/menu/multimedia/audio-mixer.png" label="Audio Mixer">
-				<action name="Execute">
-					<execute>xfce4-mixer</execute>
-				</action>
-			</item>
 			<item icon=".config/openbox/icons/menu/multimedia/brasero.png" label="Brasero Disc Burner">
 				<action name="Execute">
 					<execute>brasero</execute>
@@ -678,11 +678,6 @@
 			<item icon=".config/openbox/icons/menu/multimedia/istanbul.png" label="Istanbul Desktop Session Recorder">
 				<action name="Execute">
 					<execute>istanbul</execute>
-				</action>
-			</item>
-			<item icon=".config/openbox/icons/menu/multimedia/volume-control.png" label="PulseAudio Volume Control">
-				<action name="Execute">
-					<execute>pavucontrol</execute>
 				</action>
 			</item>
 			<item icon=".config/openbox/icons/menu/multimedia/rhythmbox.png" label="Rhythmbox Music Player">
@@ -1021,32 +1016,50 @@
 		<separator/>
 		<!-- end of Kali Tools-->
 
+		<!-- end of Common Action-->
+
 		<!--
 			###########################################################################################
 			#
-			#  C O M M O N   A C T I O N S
+			#  S E S S I O N
 			#
 			###########################################################################################
+			Required Software:
+				apt-get install \
+					openbox obmenu obconf
+				(Manually install obkey)
 		-->
-		<item icon=".config/openbox/icons/menu/lockscreen.png" label="Lock Screen">
-			<action name="Execute">
-				<execute>xscreensaver-command -lock</execute>
-			</action>
-		</item>
-		<item icon=".config/openbox/icons/menu/logout.png" label="Log Out">
-			<action name="Exit"/>
-		</item>
-		<item icon=".config/openbox/icons/menu/reboot.png" label="Reboot Computer">
-			<action name="Execute">
-				<execute>gksu reboot</execute>
-			</action>
-		</item>
-		<item icon=".config/openbox/icons/menu/shutdown.png" label="Shutdown Computer">
-			<action name="Execute">
-				<execute>gksu 'shutdown -h now'</execute>
-			</action>
-		</item>
+		<menu icon=".config/openbox/icons/menu/openbox.png" id="sub-menu-session" label="Session">
+			<item icon=".config/openbox/icons/menu/openbox/reconfigure.png" label="Reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+			<item icon=".config/openbox/icons/menu/openbox/restart.png" label="Restart">
+				<action name="Restart"/>
+			</item>
+			<!-- Openbox Virtual Desktop Management -->
+			<menu icon=".config/openbox/icons/menu/openbox/desktop.png" id="client-list-menu"/>
+			<separator/>
+			<item icon=".config/openbox/icons/menu/lockscreen.png" label="Lock Screen">
+				<action name="Execute">
+					<execute>xscreensaver-command -lock</execute>
+				</action>
+			</item>
+			<item icon=".config/openbox/icons/menu/logout.png" label="Log Out">
+				<action name="Exit"/>
+			</item>
+			<item icon=".config/openbox/icons/menu/reboot.png" label="Reboot Computer">
+				<action name="Execute">
+					<execute>gksu reboot</execute>
+				</action>
+			</item>
+			<item icon=".config/openbox/icons/menu/shutdown.png" label="Shutdown Computer">
+				<action name="Execute">
+					<execute>gksu 'shutdown -h now'</execute>
+				</action>
+			</item>
 
-		<!-- end of Common Action-->
+			</menu>
+		<!-- end of Submenu: Openbox -->
+
 	</menu>
 </openbox_menu>
