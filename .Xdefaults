@@ -1,0 +1,162 @@
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
+ 
+Xft.dpi:                    96
+Xft.antialias:              false
+Xft.rgba:                   rgb
+Xft.hinting:                true
+Xft.hintstyle:              hintslight
+!Xft*dpi:					96
+!#Xft*antialias:				true
+!#Xft*hinting:				full
+
+Xcursor.theme:				Vanilla-DMZ
+
+!urxvt*fading: 30 
+!urxvt*fadeColor: black
+
+! url underline color
+urxvt*underlineColor: gray
+
+URxvt*urgentOnBell:         true
+URxvt*visualBell:           false
+
+!URxvt.lineSpace:            0
+! Fix font space
+!URxvt*letterSpace: -1
+
+urxvt*font:					xft:terminus:pixelsize=14
+urxvt*boldFont:				xft:terminus:pixelsize=14
+urxvt*borderLess:			false
+urxvt*externalBorder:		2
+urxvt*internalBorder:		2
+urxvt*scrollBar:			true
+urxvt*scrollBar_right:		true
+urxvt*scrollstyle:			plain
+urxvt*secondaryScroll:		true
+urxvt*shading:				10
+urxvt*depth:				32
+urxvt*background:			rgba:0000/0000/0000/BBBB
+urxvt*foreground:			#c8c8c8
+urxvt*cursorColor:			#ffffff
+urxvt*cursorColor2:			#000000
+urxvt*cursorBlink:			true
+urxvt*inheritPixmap:		false
+urxvt*termName:				rxvt-unicode-256color
+urxvt*saveLines:			2000
+urxvt*scrollTtyOutput:		false
+urxvt*scrollTtyKeypress:	true
+urxvt*mouseWheelScrollPage:	false
+urxvt*cutchars:				`'",;@&*=|?()<>[]{}
+urxvt*urlLauncher:			/usr/bin/chromium
+urxvt*matcher.button:		1
+urxvt*matcher.patter.1:		\\bwww\\.[\\w-]\\.[\\./?&@#-]*[\\ww/-]
+urxvt*perl-ext-common:		default,matcher,tabbed,fullscreen,clipboard
+urxvt*loginShell:			true
+urxvt*transparent:			false
+
+!
+!URxvt.tabbed.tabbar-fg:	0
+!URxvt.tabbed.tabbar-bg:		6
+!URxvt.tabbed.tab-fg:		0
+!URxvt.tabbed.tab-bg:		6
+
+urxvt*iconFile:				/usr/share/icons/Tango/32x32/apps/terminal.png
+urxvt*keysym.F11:			perl:fullscreen:switch
+urxvt*intensityStyles:		false
+
+! Clipbpard copy with (Ctrl+Shift+V)
+! Note the clipboard perl extension
+! requires xsel
+URxvt.iso14755: False
+urxvt*keysym.Shift-Control-V: perl:clipboard:paste
+
+! Cursor
+URxvt.cursorBlink:          true
+URxvt.cursorColor:          #657b83
+URxvt.cursorUnderline:      false
+ 
+! Pointer
+URxvt.pointerBlank:         true
+
+! Black
+*color0:  #2E3436
+*color8:  #555753
+! Red
+*color1:  #CC0000
+*color9:  #EF2929
+! Green
+*color2:  #4E9A06
+*color10: #8AE234
+! Yellow
+*color3:  #C4A000
+*color11: #FCE94F
+! Blue
+*color4:  #3465A4
+*color12: #729FCF
+! Purple
+*color5:  #75507B
+*color13: #AD7FA8
+! Cyan
+*color6:  #06989A
+*color14: #34E2E2
+! White
+*color7:  #D3D7CF
+*color15: #EEEEEC
+
+
+! Solarized color scheme for the X Window System
+!
+! http://ethanschoonover.com/solarized
+
+!!Source http://github.com/altercation/solarized
+ 
+!*background: #002b36
+!*foreground: #657b83
+!!*fading: 40
+!*fadeColor: #002b36
+!*cursorColor: #93a1a1
+!*pointerColorBackground: #586e75
+!*pointerColorForeground: #93a1a1
+ 
+!! black dark/light
+!*color0: #073642
+!*color8: #002b36
+ 
+!! red dark/light
+!*color1: #dc322f
+!*color9: #cb4b16
+ 
+!! green dark/light
+!*color2: #859900
+!*color10: #586e75
+ 
+!! yellow dark/light
+!*color3: #b58900
+!*color11: #657b83
+ 
+!! blue dark/light
+!*color4: #268bd2
+!*color12: #839496
+ 
+!! magenta dark/light
+!*color5: #d33682
+!*color13: #6c71c4
+ 
+!! cyan dark/light
+!*color6: #2aa198
+!*color14: #93a1a1
+ 
+!! white dark/light
+!*color7: #eee8d5
+!*color15: #fdf6e3
+
+! Xterm
+#Xterm*toolBar: false
+#XTerm*faceName: monospace:pixelsize=10
+#XTerm*dynamiccolors: true
+#xterm*Background: black
+#xterm*Foreground: white
+#xterm*scrollTtyOutput: false
+#xterm*scrollKey: true
