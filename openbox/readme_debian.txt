@@ -71,7 +71,7 @@ Required Software:
 		brasero \
 		cheese \
 		gnome-mplayer \
-		mplayer mplayer2 smplayer2 \
+		mplayer-gui mplayer2 smplayer2 \
 		vlc \
 		recordmydesktop gtk-recordmydesktop \
 		istanbul \
