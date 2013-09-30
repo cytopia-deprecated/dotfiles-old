@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
+
+	<!--
+	###########################################################################################
+	#
+	#  H A R D W A R E
+	#
+	###########################################################################################
+	-->
+	<menu id="sub-menu-hardware" label="Hardware">
+		<item icon=".config/openbox/icons/menu/hardware/bluetooth-wizard.png" label="Bluetooth Wizard">
+			<action name="Execute">
+				<execute>bluetooth-wizard</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/hardware/arandr.png" label="XRandR Gui (Monitor)">
+			<action name="Execute">
+				<execute>arandr</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/hardware/printer.png" label="Printer">
+			<action name="Execute">
+				<execute>system-config-printer</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/hardware/audio-mixer.png" label="Audio Mixer">
+			<action name="Execute">
+				<execute>xfce4-mixer</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/hardware/volume-control.png" label="PulseAudio Volume Control">
+			<action name="Execute">
+				<execute>pavucontrol</execute>
+			</action>
+		</item>
+	</menu>
+
+
+	<!--
+	###########################################################################################
+	#
+	#  S E T T I N G S
+	#
+	###########################################################################################
+	-->
+	<menu id="sub-menu-settings" label="Settings">
+		<item icon=".config/openbox/icons/menu/settings/obmenu.png" label="Openbox Menu Editor">
+			<action name="Execute">
+				<execute>obmenu</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/settings/obconf.png" label="Openbox Configuration Manager">
+			<action name="Execute">
+				<execute>obconf</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/settings/obkey.png" label="Openbox Hotkey Configuration">
+			<action name="Execute">
+				<execute>obkey</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/settings/dconf-editor.png" label="dconf-editor">
+			<action name="Execute">
+				<execute>dconf-editor</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/settings/lxappearance.png" label="LXAppearance">
+			<action name="Execute">
+				<execute>lxappearance</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/settings/ibus-setup.png" label="ibus Setup">
+			<action name="Execute">
+				<execute>ibus-setup</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/settings/qt-config.png" label="QT Config">
+			<action name="Execute">
+				<execute>qtconfig</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/settings/qt4-config.png" label="QT4 Config">
+			<action name="Execute">
+				<execute>qtconfig-qt4</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/settings/nitrogen.png" label="Change Wallpaper">
+			<action name="Execute">
+				<execute>nitrogen</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/settings/xscreensaver.png" label="XScreensaver Configuration">
+			<action name="Execute">
+				<execute>xscreensaver-demo</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/settings/wine-config.png" label="Wine Configuration">
+			<action name="Execute">
+				<execute>winecfg</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/settings/wine-uninstall.png" label="Wine Uninstaller">
+			<action name="Execute">
+				<execute>wine uninstaller</execute>
+			</action>
+		</item>
+	</menu>
+
+
+	<!--
+	###########################################################################################
+	#
+	#  A C C E S S O R I E S
+	#
+	###########################################################################################
+	-->
+	<menu id="sub-menu-accessories" label="Accessories">
+		<item icon=".config/openbox/icons/menu/accessories/catfish.png" label="Desktop Search (catfish)">
+			<action name="Execute">
+				<execute>catfish</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/accessories/gnome-search-tool.png" label="Desktop Search (gnome)">
+			<action name="Execute">
+				<execute>gnome-search-tool</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/accessories/tracker-needle.png" label="Desktop Search (tracker-needle)">
+			<action name="Execute">
+				<execute>tracker-search</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/accessories/cheese.png" label="Cheese Webcam">
+			<action name="Execute">
+				<execute>cheese</execute>
+			</action>
+		</item>
+
+		<item icon=".config/openbox/icons/menu/accessories/galculator.png" label="Galculator">
+			<action name="Execute">
+				<execute>galculator</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/accessories/leafpad.png" label="leafpad">
+			<action name="Execute">
+				<execute>leafpad</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/accessories/mc.png" label="Midnight Commander">
+			<action name="Execute">
+				<execute>urxvtc -e mc</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/accessories/xpad.png" label="xPad">
+			<action name="Execute">
+				<execute>xpad</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/accessories/screenshot.png" label="Screenshot">
+			<action name="Execute">
+				<execute>scrot</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/accessories/xarchiver.png" label="Xarchiver">
+			<action name="Execute">
+				<execute>xarchiver</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/accessories/file-roller.png" label="File Roller">
+			<action name="Execute">
+				<execute>file-roller</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/accessories/terminator.png" label="Terminator">
+			<action name="Execute">
+				<execute>terminator</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/accessories/urxvt.png" label="urxvt Terminal">
+			<action name="Execute">
+				<execute>~/.config/openbox/bin/terminal.sh</execute>
+			</action>
+		</item>
+	</menu>
+
+
+	<!--
+	###########################################################################################
+	#
+	#  C O M M U N I C A T I O N S
+	#
+	###########################################################################################
+	-->
+	<menu id="sub-menu-communications" label="Communications">
+		<item icon=".config/openbox/icons/menu/communications/gajim.png" label="Gajim">
+			<action name="Execute">
+				<execute>gajim</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/communications/jitsi.png" label="Jitsi">
+			<action name="Execute">
+				<execute>jitsi</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/communications/pidgin.png" label="Pidgin">
+			<action name="Execute">
+				<execute>pidgin</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/communications/skype.png" label="Skype">
+			<action name="Execute">
+				<execute>skype</execute>
+			</action>
+		</item>
+		<separator/>
+		<item icon=".config/openbox/icons/menu/communications/mumble.png" label="Mumble">
+			<action name="Execute">
+				<execute>mumble</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/communications/teamspeak.png" label="Teamspeak">
+			<action name="Execute">
+				<execute>teamspeak</execute>
+			</action>
+		</item>
+		<separator/>
+		<item icon=".config/openbox/icons/menu/communications/xchat.png" label="X-Chat">
+			<action name="Execute">
+				<execute>xchat</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/communications/irssi.png" label="irssi">
+			<action name="Execute">
+				<execute>urxvtc -e irssi</execute>
+			</action>
+		</item>
+	</menu>
+
+
+	<!--
+	###########################################################################################
+	#
+	#  D E V E L O P M E N T
+	#
+	###########################################################################################
+	-->
+	<menu id="sub-menu-development" label="Development">
+		<item icon=".config/openbox/icons/menu/development/anjuta.png" label="Anjuta">
+			<action name="Execute">
+				<execute>anjuta</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/development/bluefish.png" label="Bluefish">
+			<action name="Execute">
+				<execute>bluefish</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/development/geany.png" label="Geany">
+			<action name="Execute">
+				<execute>geany</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/development/gedit.png" label="Gedit">
+			<action name="Execute">
+				<execute>gedit</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/development/medit.png" label="mEdit">
+			<action name="Execute">
+				<execute>medit</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/development/sublime.png" label="Sublime Text 3">
+			<action name="Execute">
+				<execute>subl</execute>
+			</action>
+		</item>
+		<separator/>
+		<item icon=".config/openbox/icons/menu/development/bless.png" label="Bless Hex Editor">
+			<action name="Execute">
+				<execute>bless</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/development/ghex.png" label="gHex">
+			<action name="Execute">
+				<execute>ghex</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/development/hexedit.png" label="hexedit">
+			<action name="Execute">
+				<execute>urxvtc -e hexedit</execute>
+			</action>
+		</item>
+		<separator/>
+		<item icon=".config/openbox/icons/menu/development/bzr-explorer.png" label="Bazaar Explorer">
+			<action name="Execute">
+				<execute>bzr-explorer</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/development/giggle.png" label="Giggle">
+			<action name="Execute">
+				<execute>giggle</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/development/gitg.png" label="Gitg">
+			<action name="Execute">
+				<execute>gitg</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/development/git-cola.png" label="Git DAG (cola)">
+			<action name="Execute">
+				<execute>git-cola</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/development/tortoisehg.png" label="TortoiseHg Workbench">
+			<action name="Execute">
+				<execute>thg</execute>
+			</action>
+		</item>
+		<separator/>
+		<item icon=".config/openbox/icons/menu/development/koala.png" label="Koala">
+			<action name="Execute">
+				<execute>koala</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/development/meld.png" label="Meld">
+			<action name="Execute">
+				<execute>meld</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/development/nemiver.png" label="Nemiver Debugger">
+			<action name="Execute">
+				<execute>nemiver</execute>
+			</action>
+		</item>
+	</menu>
+
+
+	<!--
+	###########################################################################################
+	#
+	#  G A M E S
+	#
+	###########################################################################################
+	-->
+	<menu id="sub-menu-games" label="Games">
+		<!--
+		<item icon=".config/openbox/icons/menu/development/.png" label="Item">
+			<action name="Execute">
+				<execute>chromium</execute>
+			</action>
+		</item>
+		-->
+	</menu>
+
+
+	<!--
+	###########################################################################################
+	#
+	#  G R A P I C S
+	#
+	###########################################################################################
+	-->
+	<menu id="sub-menu-graphics" label="Graphics">
+		<item icon=".config/openbox/icons/menu/graphics/darktable.png" label="Darktable">
+			<action name="Execute">
+				<execute>darktable</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/graphics/gimp.png" label="Gimp">
+			<action name="Execute">
+				<execute>gimp</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/graphics/inkscape.png" label="Inkscape Vector Graphics Editor">
+			<action name="Execute">
+				<execute>inkscape</execute>
+			</action>
+		</item>
+		<separator/>
+		<item icon=".config/openbox/icons/menu/graphics/gnome-paint.png" label="Gnome Paint">
+			<action name="Execute">
+				<execute>gnome-paint</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/graphics/pinta.png" label="Pinta Image Editor">
+			<action name="Execute">
+				<execute>pinta</execute>
+			</action>
+		</item>
+		<separator/>
+		<item icon=".config/openbox/icons/menu/graphics/viewnior.png" label="Viewnior">
+			<action name="Execute">
+				<execute>viewnior</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/graphics/gpicview.png" label="GPicView">
+			<action name="Execute">
+				<execute>gpicview</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/graphics/geeqie.png" label="Geeqie">
+			<action name="Execute">
+				<execute>geeqie</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/graphics/gwenview.png" label="Gwenview (KDE)">
+			<action name="Execute">
+				<execute>gwenview</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/graphics/mirage.png" label="Mirage">
+			<action name="Execute">
+				<execute>mirage</execute>
+			</action>
+		</item>
+		<separator/>
+		<item icon=".config/openbox/icons/menu/graphics/mcomix.png" label="MComix Comic Book Reader">
+			<action name="Execute">
+				<execute>mcomix</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/graphics/shotwell.png" label="Shotwell Photo Manager">
+			<action name="Execute">
+				<execute>shotwell</execute>
+			</action>
+		</item>
+		<separator/>
+		<item icon=".config/openbox/icons/menu/graphics/scangui.png" label="Scan Gui">
+			<action name="Execute">
+				<execute>scangui</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/graphics/simple-scan.png" label="Simple Scan">
+			<action name="Execute">
+				<execute>simple-scan</execute>
+			</action>
+		</item>
+	</menu>
+
+
+	<!--
+	###########################################################################################
+	#
+	#  I N T E R N E T
+	#
+	###########################################################################################
+	-->
+	<menu id="sub-menu-internet" label="Internet">
+		<item icon=".config/openbox/icons/menu/internet/chromium.png" label="Chromium">
+			<action name="Execute">
+				<execute>chromium</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/internet/firefox.png" label="Firefox">
+			<action name="Execute">
+				<execute>iceweasel</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/internet/opera.png" label="Opera">
+			<action name="Execute">
+				<execute>opera</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/internet/midori.png" label="Midori">
+			<action name="Execute">
+				<execute>midori</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/internet/liferea.png" label="Liferea">
+			<action name="Execute">
+				<execute>liferea</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/internet/gpodder.png" label="GPodder">
+			<action name="Execute">
+				<execute>gpodder</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/internet/thunderbird.png" label="Thunderbird">
+			<action name="Execute">
+				<execute>icedove</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/internet/claws-mail.png" label="Claws Mail">
+			<action name="Execute">
+				<execute>claws-mail</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/internet/mutt.png" label="mutt">
+			<action name="Execute">
+				<execute>urxvtc -e mutt</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/internet/links2.png" label="links 2">
+			<action name="Execute">
+				<execute>urxvtc -e links2</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/internet/links2.png" label="links 2 (Gui)">
+			<action name="Execute">
+				<execute>links2 -g</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/internet/transmission.png" label="Transmission">
+			<action name="Execute">
+				<execute>transmission-gtk</execute>
+			</action>
+		</item>
+	</menu>
+
+
+	<!--
+	###########################################################################################
+	#
+	#  M U L T I M E D I A
+	#
+	###########################################################################################
+	-->
+	<menu id="sub-menu-multimedia" label="Multimedia">
+
+		<separator label="CD" />
+		<item icon=".config/openbox/icons/menu/multimedia/brasero.png" label="Brasero Disc Burner">
+			<action name="Execute">
+				<execute>brasero</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/multimedia/xfburn.png" label="XFburn">
+			<action name="Execute">
+				<execute>xfburn</execute>
+			</action>
+		</item>
+
+		<separator label="Music" />
+		<item icon=".config/openbox/icons/menu/multimedia/audacious.png" label="Audacious">
+			<action name="Execute">
+				<execute>audacious</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/multimedia/guayadeque.png" label="Guayadeque">
+			<action name="Execute">
+				<execute>guayadeque</execute>
+			</action>
+		</item>
+
+		<separator label="Recorder" />
+		<item icon=".config/openbox/icons/menu/multimedia/audacity.png" label="Audacity">
+			<action name="Execute">
+				<execute>audacity</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/multimedia/gnome-sound-recorder.png" label="Gnome Sound Recorder">
+			<action name="Execute">
+				<execute>gnome-sound-recorder</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/multimedia/gtk-recordmydesktop.png" label="GTK RecordMyDesktop">
+			<action name="Execute">
+				<execute>gtk-recordmydesktop</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/multimedia/istanbul.png" label="Istanbul Desktop Session Recorder">
+			<action name="Execute">
+				<execute>istanbul</execute>
+			</action>
+		</item>
+
+		<separator label="Video" />
+		<item icon=".config/openbox/icons/menu/multimedia/gnome-mplayer.png" label="Gnome MPlayer">
+			<action name="Execute">
+				<execute>gnome-mplayer</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/multimedia/totem.png" label="Totem Video Player">
+			<action name="Execute">
+				<execute>totem</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/multimedia/vlc.png" label="VLC Media Player">
+			<action name="Execute">
+				<execute>vlc</execute>
+			</action>
+		</item>
+
+		<separator label="Encoder/Ripper" />
+		<item icon=".config/openbox/icons/menu/multimedia/handbrake.png" label="Handbrake">
+			<action name="Execute">
+				<execute>handbrake-gtk</execute>
+			</action>
+		</item>
+	</menu>
+
+
+	<!--
+	###########################################################################################
+	#
+	#  N E T W O R K
+	#
+	###########################################################################################
+	-->
+	<menu id="sub-menu-network" label="Network">
+		<item icon=".config/openbox/icons/menu/network/jxplorer.png" label="JXplorer">
+			<action name="Execute">
+				<execute>jxplorer</execute>
+			</action>
+		</item>
+		<separator/>
+		<item icon=".config/openbox/icons/menu/network/emma.png" label="Emma">
+			<action name="Execute">
+				<execute>/usr/share/emma/emma</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/network/dbeaver.png" label="DBeaver">
+			<action name="Execute">
+				<execute>/usr/share/dbeaver/dbeaver</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/network/gmysqlcc.png" label="GMySQLcc">
+			<action name="Execute">
+				<execute>gmysqlcc</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/network/gsql.png" label="gSQL">
+			<action name="Execute">
+				<execute>gsql</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/network/heidisql.png" label="Heidi SQL">
+			<action name="Execute">
+				<execute>wine ~/.wine/drive_c/Program\ Files/HeidiSQL/heidisql.exe</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/network/mysql-workbench.png" label="MySQL Workbench">
+			<action name="Execute">
+				<execute>mysql-workbench</execute>
+			</action>
+		</item>
+		<separator/>
+
+		<item icon=".config/openbox/icons/menu/network/bareftp.png" label="BareFTP">
+			<action name="Execute">
+				<execute>bareftp</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/network/filezilla.png" label="Filezilla">
+			<action name="Execute">
+				<execute>filezilla</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/network/gftp.png" label="gFTP">
+			<action name="Execute">
+				<execute>gftp</execute>
+			</action>
+		</item>
+		<separator/>
+
+		<item icon=".config/openbox/icons/menu/network/gnome-rdp.png" label="Gnome RDP">
+			<action name="Execute">
+				<execute>gnome-rdp</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/network/grdesktop.png" label="grdesktop">
+			<action name="Execute">
+				<execute>grdesktop</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/network/remmina.png" label="Remmina">
+			<action name="Execute">
+				<execute>remmina</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/network/vinagre.png" label="Vinagre">
+			<action name="Execute">
+				<execute>vinagre</execute>
+			</action>
+		</item>
+		<separator/>
+
+		<item icon=".config/openbox/icons/menu/network/gtkvncviewer.png" label="GTK VNC">
+			<action name="Execute">
+				<execute>gtkvncviewer</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/network/xtightvncviewer.png" label="Tight VNC Viewer">
+			<action name="Execute">
+				<execute>xtightvncviewer</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/network/ssvncviewer.png" label="SSVNC">
+			<action name="Execute">
+				<execute>ssvncviewer</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/network/xvnc4viewer.png" label="XVNC 4 Viewer">
+			<action name="Execute">
+				<execute>urxvt -e xvnc4viewer</execute>
+			</action>
+		</item>
+		<separator/>
+
+		<item icon=".config/openbox/icons/menu/network/grsync.png" label="Grsync">
+			<action name="Execute">
+				<execute>grsync</execute>
+			</action>
+		</item>
+	</menu>
+
+
+	<!--
+	###########################################################################################
+	#
+	#  O F F I C E
+	#
+	###########################################################################################
+	-->
+	<menu id="sub-menu-office" label="Office">
+
+		<item icon=".config/openbox/icons/menu/office/bitcoin.png" label="Bitcoin">
+			<action name="Execute">
+				<execute>bitcoin-qt</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/office/litecoin.png" label="Litecoin">
+			<action name="Execute">
+				<execute>litecoin-qt</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/office/namecoin.png" label="Namecoin">
+			<action name="Execute">
+				<execute>namecoin-qt</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/office/netcoin.png" label="Netcoin">
+			<action name="Execute">
+				<execute>netcoin-qt</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/office/ppcoin.png" label="PPCoin">
+			<action name="Execute">
+				<execute>ppcoin-qt</execute>
+			</action>
+		</item>
+		<separator/>
+
+		<item icon=".config/openbox/icons/menu/office/abiword.png" label="AbiWord">
+			<action name="Execute">
+				<execute>abiword</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/office/gnumeric.png" label="Gnumeric">
+			<action name="Execute">
+				<execute>gnumeric</execute>
+			</action>
+		</item>
+		<separator/>
+
+
+		<item icon=".config/openbox/icons/menu/office/wpp.png" label="Kingsoft Presentation">
+			<action name="Execute">
+				<execute>wpp</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/office/et.png" label="Kingsoft Spreadsheet">
+			<action name="Execute">
+				<execute>et</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/office/wps.png" label="Kingsoft Writer">
+			<action name="Execute">
+				<execute>wps</execute>
+			</action>
+		</item>
+		<separator/>
+
+		<item icon=".config/openbox/icons/menu/office/libreoffice.png" label="LibreOffice">
+			<action name="Execute">
+				<execute>libreoffice</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/office/libreoffice-calc.png" label="LibreOffice Calc">
+			<action name="Execute">
+				<execute>libreoffice --calc</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/office/libreoffice-draw.png" label="LibreOffice Draw">
+			<action name="Execute">
+				<execute>libreoffice --draw</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/office/libreoffice-impress.png" label="LibreOffice Impress">
+			<action name="Execute">
+				<execute>libreoffice --impress</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/office/libreoffice-math.png" label="LibreOffice Math">
+			<action name="Execute">
+				<execute>libreoffice --math</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/office/libreoffice-writer.png" label="LibreOffice Writer">
+			<action name="Execute">
+				<execute>libreoffice --writer</execute>
+			</action>
+		</item>
+		<separator/>
+
+		<item icon=".config/openbox/icons/menu/office/pdfedit.png" label="PDF-Edit">
+			<action name="Execute">
+				<execute>pdfedit</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/office/masterpdf.png" label="Master PDF Editor">
+			<action name="Execute">
+				<execute>pdfeditor</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/office/evince.png" label="Evince Document Viewer">
+			<action name="Execute">
+				<execute>evince</execute>
+			</action>
+		</item>
+	</menu>
+
+
+	<!--
+	###########################################################################################
+	#
+	#  S E C U R I T Y
+	#
+	###########################################################################################
+	-->
+	<menu id="sub-menu-security" label="Security">
+		<item icon=".config/openbox/icons/menu/security/gpa.png" label="Gpa">
+			<action name="Execute">
+				<execute>gpa</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/security/gtkhash.png" label="GtkHash">
+			<action name="Execute">
+				<execute>gtkhash</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/security/keepass2.png" label="KeePass2">
+			<action name="Execute">
+				<execute>keepass2</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/security/keepassx.png" label="KeePassX">
+			<action name="Execute">
+				<execute>keepassx</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/security/seahorse.png" label="Seahorse">
+			<action name="Execute">
+				<execute>seahorse</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/security/truecrypt.png" label="TrueCrypt">
+			<action name="Execute">
+				<execute>truecrypt</execute>
+			</action>
+		</item>
+	</menu>
+
+
+	<!--
+	###########################################################################################
+	#
+	#  S E S S I O N
+	#
+	###########################################################################################
+	-->
+	<menu id="sub-menu-session" label="Session">
+		<item icon=".config/openbox/icons/menu/session/reconfigure.png" label="Reconfigure">
+			<action name="Reconfigure"/>
+		</item>
+		<item icon=".config/openbox/icons/menu/session/restart.png" label="Restart">
+			<action name="Restart"/>
+		</item>
+		<!-- Openbox Virtual Desktop Management -->
+		<menu icon=".config/openbox/icons/menu/session/desktop.png" id="client-list-menu"/>
+		<separator/>
+
+		<item icon=".config/openbox/icons/menu/session/xrefresh.png" label="XRefresh">
+			<action name="Execute">
+				<execute>xrefresh</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/session/xkill.png" label="XKill">
+			<action name="Execute">
+				<execute>xkill</execute>
+			</action>
+		</item>
+		<separator/>
+
+		<item icon=".config/openbox/icons/menu/session/lockscreen.png" label="Lock Screen">
+			<action name="Execute">
+				<execute>xscreensaver-command -lock</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/session/logout.png" label="Log Out">
+			<action name="Exit"/>
+		</item>
+		<item icon=".config/openbox/icons/menu/session/reboot.png" label="Reboot Computer">
+			<action name="Execute">
+				<execute>gksu reboot</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/session/shutdown.png" label="Shutdown Computer">
+			<action name="Execute">
+				<execute>gksu 'shutdown -h now'</execute>
+			</action>
+		</item>
+	</menu>
+
+
+
+
+	<!--
+	###########################################################################################
+	###########################################################################################
+	##
+	##  OPENBOX ROOT MENU
+	##
+	###########################################################################################
+	###########################################################################################
+	-->
+	<menu id="root-menu" label="Openbox 3">
+
+		<item icon=".config/openbox/icons/menu/rootmenu/run.png" label="Run Program">
+			<action name="Execute">
+				<execute>gmrun</execute>
+			</action>
+		</item>
+		<separator/>
+
+		<item icon=".config/openbox/icons/menu/rootmenu/terminal.png" label="Terminal Emulator">
+			<action name="Execute">
+				<execute>~/.config/openbox/bin/terminal.sh</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/rootmenu/file-manager.png" label="File Manager">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/rootmenu/mail.png" label="Mail Reader">
+			<action name="Execute">
+				<execute>icedove</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/rootmenu/browser.png" label="Web Browser">
+			<action name="Execute">
+				<execute>chromium</execute>
+			</action>
+		</item>
+		<separator/>
+
+		<menu icon=".config/openbox/icons/menu/rootmenu/hardware.png" id="sub-menu-hardware"/>
+		<menu icon=".config/openbox/icons/menu/rootmenu/settings.png" id="sub-menu-settings"/>
+		<separator/>
+
+		<menu icon=".config/openbox/icons/menu/rootmenu/accessories.png" id="sub-menu-accessories"/>
+		<menu icon=".config/openbox/icons/menu/rootmenu/communications.png" id="sub-menu-communications"/>
+		<menu icon=".config/openbox/icons/menu/rootmenu/development.png" id="sub-menu-development"/>
+		<menu icon=".config/openbox/icons/menu/rootmenu/games.png" id="sub-menu-games"/>
+		<menu icon=".config/openbox/icons/menu/rootmenu/graphics.png" id="sub-menu-graphics"/>
+		<menu icon=".config/openbox/icons/menu/rootmenu/internet.png" id="sub-menu-internet"/>
+		<menu icon=".config/openbox/icons/menu/rootmenu/multimedia.png" id="sub-menu-multimedia"/>
+		<menu icon=".config/openbox/icons/menu/rootmenu/network.png" id="sub-menu-network"/>
+		<menu icon=".config/openbox/icons/menu/rootmenu/office.png" id="sub-menu-office"/>
+		<menu icon=".config/openbox/icons/menu/rootmenu/security.png" id="sub-menu-security"/>
+		<separator/>
+
+		<menu icon=".config/openbox/icons/kali_menu/kali-menu.png" id="/Kali"/>
+		<menu icon=".config/openbox/icons/menu/rootmenu/session.png" id="sub-menu-session"/>
+
+	</menu>
+
+</openbox_menu>
