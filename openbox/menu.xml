@@ -572,6 +572,16 @@
 				<execute>gnome-mplayer</execute>
 			</action>
 		</item>
+		<item icon=".config/openbox/icons/menu/multimedia/mplayer.png" label="Mplayer">
+			<action name="Execute">
+				<execute>gmplayer</execute>
+			</action>
+		</item>
+		<item icon=".config/openbox/icons/menu/multimedia/smplayer2.png" label="SMPlayer2">
+			<action name="Execute">
+				<execute>smplayer2</execute>
+			</action>
+		</item>
 		<item icon=".config/openbox/icons/menu/multimedia/totem.png" label="Totem Video Player">
 			<action name="Execute">
 				<execute>totem</execute>
