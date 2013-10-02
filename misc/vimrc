@@ -1,0 +1,46 @@
+" Vimrc file, http://phuzz.org
+ 
+set nocompatible                " use vim defaults instead of vi defaults
+ 
+" Display Settings
+set background=dark             " enable for dark terminals
+set nowrap                      " do not wrap lines
+set scrolloff=5                 " 5 lines above/below cursor when scrolling
+set numberwidth=5               " reserve 5 spaces for the numbering (left)
+set number                      " show line numbers
+set showmatch                   " show matching bracket (briefly jump)
+set showmode                    " show mode in status bar (insert/replace/...)
+set cursorline                  " show a line where the cursor is
+set showcmd                     " show typed command in status bar
+set ruler                       " show cursor position in status bar
+set title                       " show file in titlebar
+ 
+ 
+set wildmode=longest,list       " bash-like tab completion
+set laststatus=2                " use 2 lines for the status bar
+ 
+" Editor Settings
+set ignorecase                  " first enable ignore case for searching
+set smartcase                   " then enable smart case (case-sensetive if you use uppercase characters)
+"set smartindent                " smart auto indenting
+"set smarttab                   " smart tab handling for indenting
+set magic                       " change the way backslashes are used in search patterns
+set bs=indent,eol,start         " Allow backspacing over everything in insert mode
+ 
+set tabstop=4                   " number of spaces a tab counts for
+set shiftwidth=4                " spaces for autoindents
+set noexpandtab                 " do not turn tabs into spaces
+ 
+" colors
+syntax on
+ 
+" user interface
+set visualbell
+ 
+" searching and matching
+set incsearch
+set hlsearch
+set completeopt=longest,preview
+ 
+" Character encoding
+set encoding=utf-8              " Do use UTF-8
