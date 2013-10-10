@@ -1,0 +1,214 @@
+###############################################################################################
+#
+# Official Debian Repositories
+#
+###############################################################################################
+
+################################### Debian Wheezy (Debian 7 - Stable)
+
+### Main Sources
+deb		http://ftp.de.debian.org/debian/	wheezy						main contrib non-free
+deb-src	http://ftp.de.debian.org/debian/	wheezy						main contrib non-free
+
+### Security Updates
+deb		http://security.debian.org/			wheezy/updates				main contrib non-free
+deb-src	http://security.debian.org/			wheezy/updates				main contrib non-free
+
+### Software Updates
+deb		http://ftp.de.debian.org/debian/	wheezy-updates				main contrib non-free
+deb-src	http://ftp.de.debian.org/debian/	wheezy-updates				main contrib non-free
+
+### Proposed Updates
+deb		http://ftp.de.debian.org/debian/	wheezy-proposed-updates		main contrib non-free
+deb-src	http://ftp.de.debian.org/debian/	wheezy-proposed-updates		main contrib non-free
+
+################################### Debian Jessie (Debian 8 - Testing)
+
+### Main Sources
+deb		http://ftp.de.debian.org/debian/	jessie						main contrib non-free
+deb-src	http://ftp.de.debian.org/debian/	jessie						main contrib non-free
+
+### Security Updates
+deb		http://security.debian.org/			jessie/updates				main contrib non-free
+deb-src	http://security.debian.org/			jessie/updates				main contrib non-free
+
+### Proposed Updates
+deb		http://ftp.de.debian.org/debian/	jessie-proposed-updates		main contrib non-free
+deb-src	http://ftp.de.debian.org/debian/	jessie-proposed-updates		main contrib non-free
+
+################################### Debian Sid (Debian Unstable)
+
+### Main Sources
+#deb		http://ftp.de.debian.org/debian/	sid							main contrib non-free
+#deb-src	http://ftp.de.debian.org/debian/	sid							main contrib non-free
+
+
+###############################################################################################
+#
+# Debian Extra Repositories
+#
+###############################################################################################
+
+#### Debian Backports
+deb		http://ftp.debian.org/debian/					wheezy-backports	main
+deb-src	http://ftp.debian.org/debian/					wheezy-backports	main
+
+deb		http://backports.debian.org/debian-backports/	squeeze-backports	main
+deb-src	http://backports.debian.org/debian-backports/	squeeze-backports	main
+deb		http://backports.debian.org/debian-backports/	squeeze-backports-sloppy main
+deb-src	http://backports.debian.org/debian-backports/	squeeze-backports-sloppy main
+
+deb		http://www.backports.org/debian/				squeeze-backports	main
+deb-src	http://www.backports.org/debian/				squeeze-backports	main
+
+### Debian Multimedia
+# apt-get install deb-multimedia-keyring
+deb		http://www.deb-multimedia.org/					wheezy				main non-free
+deb		http://www.deb-multimedia.org/					jessie				main non-free
+deb		http://www.deb-multimedia.org/					sid					main non-free
+
+
+###############################################################################################
+#
+# 3rd Party Repositories
+#
+###############################################################################################
+
+### Kali Pentestin Linux
+# aot-get install kali-archive-keyring
+#deb		http://http.kali.org/							/kali				main contrib non-free
+#deb		http://http.kali.org/							/wheezy				main contrib non-free
+
+#deb		http://http.kali.org/kali						kali-dev			main contrib non-free
+#deb		http://http.kali.org/kali						kali-dev			main/debian-installer
+#deb-src	http://http.kali.org/kali						kali-dev			main contrib non-free
+
+#deb		http://http.kali.org/kali						kali				main contrib non-free
+#deb		http://http.kali.org/kali						kali				main/debian-installer
+#deb-src	http://http.kali.org/kali						kali				main contrib non-free
+
+#deb		http://security.kali.org/kali-security			kali/updates		main contrib non-free
+#deb-src	http://security.kali.org/kali-security			kali/updates		main contrib non-free
+
+
+
+### Mozilla
+## apt-get install pkg-mozilla-archive-keyring
+deb		http://mozilla.debian.net			wheezy-backports			iceweasel-release
+
+### Bitcoin Client
+## gpg --keyserver hkp://subkeys.pgp.net --recv-keys D46F45428842CE5E
+deb-src http://ppa.launchpad.net/bitcoin/bitcoin/ubuntu precise main
+
+#### Jitsi VoIP
+##
+#deb		http://download.jitsi.org/deb		unstable/
+
+
+
+### Skype
+#
+#deb http://download.skype.com/linux/repos/debian/ stable non-free
+
+################################### Misc Stuff
+
+
+
+###############################################################################################
+#
+# Games
+#
+###############################################################################################
+#### 0AD
+## apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E4FA953A
+#deb http://ppa.launchpad.net/wfg/0ad/ubuntu maverick main
+
+
+
+
+
+
+###############################################################################################
+#
+# Unsorted Repositories
+#
+###############################################################################################
+
+
+#### XFCE NEXT
+## wget http://packages.siduction.org/base/pool/main/s/siduction-archive-keyring/siduction-archive-keyring_2013.03.29_all.deb
+## dpkg -i siduction-archive-keyring_2013.03.29_all.deb
+## rm siduction-archive-keyring_2013.03.29_all.deb
+deb		http://packages.siduction.org/xfcenext unstable main
+deb-src	http://packages.siduction.org/xfcenext unstable main
+
+#### MISC XFCE
+## apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 23A187B2
+deb http://ppa.launchpad.net/landronimirc/xfce/ubuntu precise main
+
+#### MIDORI WEB BROWSER
+## apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A69241F1
+deb http://ppa.launchpad.net/midori/ppa/ubuntu precise main
+
+#### VIRTUALBOX
+## wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O-  | sudo apt-key add -
+deb http://download.virtualbox.org/virtualbox/debian lenny contrib
+
+#### CHROMIUM
+## apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E5E17B5
+#deb		http://ppa.launchpad.net/chromium-daily/ppa/ubuntu/ hardy main
+#deb-src	http://ppa.launchpad.net/chromium-daily/ppa/ubuntu/ hardy main
+
+#### BLUEFISH - http://bluefish.openoffice.nl/
+## gpg --keyserver pgp.mit.edu --recv-keys 0xE394D996
+## gpg --armor --export 0xE394D996 | apt-key add -
+deb http://debian.wgdd.de/debian squeeze main contrib non-free
+
+#### MATE DESKTOP - http://mate-desktop.org/
+## apt-get install mate-archive-keyring
+deb http://repo.mate-desktop.org/debian wheezy main
+
+
+#### PHOTIVO - http://photivo.org/
+## apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93330B78
+deb http://ppa.launchpad.net/dhor/myway/ubuntu natty main
+
+#### LIFEREA (News Aggregator)
+## apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 412F055D
+deb http://ppa.launchpad.net/liferea/ppa/ubuntu precise main
+
+#### OPERA BROWSER
+## wget -O - http://deb.opera.com/archive.key | apt-key add -
+deb http://deb.opera.com/opera/ stable non-free
+
+#### GWIBBER DAILY (Microbloggin)
+# apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 72D340A3
+deb http://ppa.launchpad.net/gwibber-daily/ppa/ubuntu natty main
+deb http://ppa.launchpad.net/gwibber-daily/ppa/ubuntu maverick  main
+
+#### KAZAM SCREENCASTER
+## apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3BB0BCFA
+deb http://ppa.launchpad.net/and471/kazam-daily-builds/ubuntu natty main
+deb http://ppa.launchpad.net/kazam-team/stable-series/ubuntu oneiric main
+
+#### CAIRO COMPOSITE MANAGER
+## apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 75198A89
+deb http://ppa.launchpad.net/shnatsel/staging/ubuntu oneiric main
+
+#### XBOX MEDIA CENTER XBMC
+## apt-key adv --recv-keys --keyserver keyserver.ubuntu.com  0x189701DA570C56B9488EF60A6D975C4791E7EE5E
+deb http://ppa.launchpad.net/team-xbmc/ppa/ubuntu oneiric main
+
+#### WIITHON
+## apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1F882273
+deb http://ppa.launchpad.net/wii.sceners.linux/wiithon-1.1/ubuntu karmic main
+
+#### BISIGI THEMES - http://www.bisigi-project.org/
+## apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0x1781bd45c4c3275a34bb6aec6e871c4a881574de
+deb http://ppa.launchpad.net/bisigi/ppa/ubuntu jaunty main
+
+#### EXAILE UBUNTU - http://www.exaile.org/
+## gpg --no-default-keyring --keyring /tmp/.exaile.keyring --keyserver keyserver.ubuntu.com --recv   B79BBC58DE219687E584187AC174A7B143CBFCC0
+## gpg --no-default-keyring --keyring /tmp/.exaile.keyring --export --armor B79BBC58DE219687E584187AC174A7B143CBFCC0 | sudo apt-key add -
+deb http://ppa.launchpad.net/exaile-devel/ubuntu karmic main
+
