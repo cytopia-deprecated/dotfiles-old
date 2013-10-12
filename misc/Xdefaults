@@ -28,8 +28,8 @@ URxvt*visualBell:           false
 urxvt*font:					xft:Terminus:pixelsize=14
 urxvt*boldFont:				xft:Terminus:pixelsize=14
 urxvt*borderLess:			false
-urxvt*externalBorder:		2
-urxvt*internalBorder:		2
+urxvt*externalBorder:		0
+urxvt*internalBorder:		0
 urxvt*scrollBar:			true
 urxvt*scrollBar_right:		true
 urxvt*scrollstyle:			plain
@@ -51,9 +51,11 @@ urxvt*cutchars:				`'",;@&*=|?()<>[]{}
 urxvt*urlLauncher:			/usr/bin/chromium
 urxvt*matcher.button:		1
 urxvt*matcher.patter.1:		\\bwww\\.[\\w-]\\.[\\./?&@#-]*[\\ww/-]
-urxvt*perl-ext-common:		default,matcher,tabbed,fullscreen,clipboard
+urxvt*perl-ext-common:		default,matcher,tabbed,fullscreen,clipboard,searchable-scrollback
 urxvt*loginShell:			true
 urxvt*transparent:			false
+
+urxvt*imLocale:				en_US.UTF-8
 
 !
 !URxvt.tabbed.tabbar-fg:	0
@@ -63,6 +65,7 @@ urxvt*transparent:			false
 
 urxvt*iconFile:				/usr/share/icons/Tango/32x32/apps/terminal.png
 urxvt*keysym.F11:			perl:fullscreen:switch
+urxvt*keysym.C-u:         perl:matcher
 urxvt*intensityStyles:		false
 
 ! Clipbpard copy with (Ctrl+Shift+V)
