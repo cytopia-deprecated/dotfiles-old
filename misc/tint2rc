@@ -7,18 +7,11 @@
 # For more config file examples, see:
 # http://crunchbanglinux.org/forums/topic/3232/my-tint2-config/
 
-# Background definitions
-# ID 1
-#rounded = 0
-#border_width = 0
-#background_color = #ffffff 5
-#border_color = #828282 0
-
 #---------------------------------------------
 # Required Programs
 #---------------------------------------------
 #
-# * gsimplecal
+# * orage
 #
 
 
@@ -101,7 +94,7 @@ autohide = 0
 autohide_show_timeout = 0.0
 autohide_hide_timeout = 999999
 autohide_height = 0
-reserve_space = 0 # not yet implemented
+#reserve_space = 0 # not yet implemented
 
 
 
@@ -214,18 +207,8 @@ time2_font = Liberation Sans 6
 clock_font_color = #828282 100
 clock_padding = 12 4
 clock_background_id = 0
-clock_lclick_command = gsimplecal
-clock_rclick_command = gsimplecal
-
-#time1_format = %H:%M
-#time1_font = sans 8
-#time2_format = %A %d %B
-#time2_font = sans 6
-#clock_font_color = #ffffff 76
-#clock_padding = 4 4
-#clock_background_id = 0
-
-
+clock_lclick_command = pidof orage && orage --toggle || orage
+clock_rclick_command = pidof orage && orage --toggle || orage
 
 
 #---------------------------------------------
