@@ -1,0 +1,80 @@
+{
+	/* ************************************** VIEW ************************************** */
+
+	/* *** Tabs *** */
+	"highlight_modified_tabs": true,
+	"show_tab_close_buttons": true,
+
+
+	/* *** Sidebar *** */
+	"bold_folder_labels": false,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS"
+	],
+
+
+	/* *** Minimap *** */
+	"always_show_minimap_viewport": true,
+	"draw_minimap_border": true,
+
+
+	/* *** Font *** */
+	"font-face": "Consolas",
+	"font_options":[],
+	"font_size": 9,
+
+
+	/* *** Code Window *** */
+	"fold_buttons": true,
+	"gutter": true,
+	"highlight_line": true,
+	"line_numbers": true,
+	"word_wrap": false,
+	"wrap_width": 0,
+
+
+	/* *** Theme *** */
+	"color_scheme": "Packages/Theme - Flatland/Flatland Monokai.tmTheme",
+	"theme": "Flatland Dark.sublime-theme",
+	"overlay_scroll_bars": "system",
+
+
+
+	/* ************************************** SYSTEM ************************************** */
+
+	/* *** Packages *** */
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+
+	/* *** Behavior *** */
+	"always_prompt_for_file_reload": false,
+	"ignore_inodes": true,
+	"spell_check": false,
+
+
+	/* *** Default File Options *** */
+	"default_encoding": "UTF-8",
+	"default_line_ending": "unix",
+	"ensure_newline_at_eof_on_save": true,
+	"translate_tabs_to_spaces": false,
+	"tab_size": 4,
+	"use_tab_stops": true,
+	"trim_automatic_white_space": true,
+	"trim_trailing_white_space_on_save": true,
+
+
+	/* *** Project *** */
+	"index_files": true,
+
+
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
+	"preview_on_click": true,
+	"remember_open_files": true,
+}
+
